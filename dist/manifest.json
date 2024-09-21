@@ -1,0 +1,38 @@
+{
+  "manifest_version": 2,
+  "name": "Res Proxy",
+  "version": "1.0.0",
+  "description": "一个简单的资源映射插件（v2）",
+  "icons": {
+    "16": "icons/icon.png",
+    "32": "icons/icon.png",
+    "48": "icons/icon.png",
+    "128": "icons/icon.png"
+  },
+  "browser_action": {
+    "default_icon": "icons/icon.png",
+    "default_title": "Res Proxy",
+    "default_popup": "index.html"
+  },
+  "background": {
+    "scripts": ["background/service_worker.js"],
+    "persistent": true
+  },
+  "content_scripts": [
+    {
+      "js": ["content/content_script.js"],
+      "matches": ["*://*/*", "<all_urls>"],
+      "all_frames": true,
+      "run_at": "document_start"
+    }
+  ],
+
+  "permissions": [
+    "storage",
+    "notifications",
+    "unlimitedStorage",
+    "webRequest",
+    "webRequestBlocking",
+    "<all_urls>"
+  ]
+}
