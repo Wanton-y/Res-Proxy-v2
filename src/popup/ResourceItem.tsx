@@ -120,7 +120,7 @@ function ResourceItem({ data, saveCb }) {
           onChange={e => {
             updateItem({ matchUrl: e.target.value });
           }}
-          prefix="match"
+          prefix="match："
           value={item.matchUrl}
           placeholder="url"
           style={{ marginRight: 4 }}
@@ -130,7 +130,7 @@ function ResourceItem({ data, saveCb }) {
           onChange={e => {
             updateItem({ replaceUrl: e.target.value });
           }}
-          prefix="replace"
+          prefix="replace："
           value={item.replaceUrl}
           placeholder="url"
           disabled={!item.edit}
