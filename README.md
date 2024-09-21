@@ -7,7 +7,7 @@ Res-Proxy
 
 **使用Res-Proxy**
 
-1. git clone [https://github.com/Wanton-y/Res-Proxy-v2.git]
+1. git clone https://github.com/Wanton-y/Res-Proxy-v2.git
 2. 打开chrome扩展程序
 3. 打开开发者模式
 4. 点击加载已解压的扩展程序，加载下载包中的dist文件
