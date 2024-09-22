@@ -30,8 +30,8 @@ Res-Proxy
 
 点击分组名称 右侧 添加按钮，可在分组下添加一条规则。
 
-*   **match**： 可以是一个完整的url，也可以是一个正则表达式，当请求的URL与之匹配时，规则生效。注意:不要填开头的<code>/</code>和结束的<code>/gi</code>，如<code>/.\*/gi</code>请写成<code>.\*</code>
-*   **target**： 目标url，会替换掉match中匹配的部分。线上地址请以http://开头，本地地址以file:///开头，比如<code>http://match.com</code>或<code>file:///D:/match.js</code>
+*   **match**： 可以是一个完整的url，也可以是一个正则表达式，当请求的URL与之匹配时，规则生效。注意:正则匹配不要填开头的<code>/</code>和结束的<code>/gi</code>，如<code>/.\*/gi</code>请写成<code>.\*</code>
+*   **target**： 目标url，会替换掉match中匹配的部分。线上地址请以 http:// 开头，本地地址以 file:/// 开头，比如<code>http://match.com</code>或<code>file:///D:/match.js</code>
 *   **match**：勾选/取消对应规则前面的勾选框即可。
 *   **编辑**：可编辑当前规则的名称，match url， target url。
 *   **删除**：删除当前规则。
