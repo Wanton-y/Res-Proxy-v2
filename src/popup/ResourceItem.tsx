@@ -130,7 +130,7 @@ function ResourceItem({ data, saveCb }) {
           onChange={e => {
             updateItem({ replaceUrl: e.target.value });
           }}
-          prefix="replace："
+          prefix="target："
           value={item.replaceUrl}
           placeholder="url"
           disabled={!item.edit}
